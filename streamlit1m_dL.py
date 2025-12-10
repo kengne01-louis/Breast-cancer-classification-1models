@@ -287,7 +287,7 @@ def display_results(image):
         """, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
-# ========== NOUVELLE SECTION : ONGLETS POUR CHOIX DE MÉTHODE ==========
+#  NOUVELLE SECTION : ONGLETS POUR CHOIX DE MÉTHODE 
 
 # Créer des onglets pour choisir la méthode d'importation
 tab1, tab2 = st.tabs(["📁 **Importer une image**", "📸 **Prendre une photo**"])
@@ -296,7 +296,7 @@ tab1, tab2 = st.tabs(["📁 **Importer une image**", "📸 **Prendre une photo**
 with tab1:
     st.markdown('<div class="custom-card">', unsafe_allow_html=True)
     st.markdown("### 📁 **IMPORTER UNE IMAGE DEPUIS VOTRE APPAREIL**")
-    uploaded_file = st.file_uploader("**Sélectionnez une image**", 
+    uploaded_file = st.file_uploader("**SELECTIONNEZ UNE IMAGE**", 
                                     type=["jpg", "jpeg", "png"],
                                     help="Format accepté : JPG, JPEG, PNG")
     
@@ -306,8 +306,8 @@ with tab1:
     else:
         st.markdown("""
             <div style="text-align: center; padding: 40px;">
-                <h3 style="color: #1565c0;">📁 Sélectionnez une image depuis votre appareil</h3>
-                <p style="color: #666;">Format accepté : JPG, JPEG, PNG</p>
+                <h3 style="color: #1565c0;">📁 Sélectionnez une image dépuis votre appareil</h3>
+                <p style="color: #666;"> Importe l'image  &  Active la caméra</p>
             </div>
         """, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
