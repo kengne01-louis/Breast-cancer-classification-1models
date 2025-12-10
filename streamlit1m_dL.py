@@ -145,7 +145,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 #CHARGER LE MODÈLE 
-MODEL_PATH = "/models/mon_CNN_final.h5"
+MODEL_PATH = "mon_CNN_final.h5"
 model = tf.keras.models.load_model(MODEL_PATH)
 
 #CLASSES 
